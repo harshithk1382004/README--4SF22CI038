@@ -1,13 +1,13 @@
-def select_sort(array):
-    for i in range(len(array)):
+def selection_sort(arr):
+    for i in range(len(arr)):
         min_idx = i
-        for j in range(i + 1, len(arr)ay):
-            if array[j] < array[min_idx]:
+        for j in range(i + 1, len(arr)):
+            if arr[j] < arr[min_idx]:
                 min_idx = j
-        array[i], array[min_idx] = array[min_idx], array[i]  
-    return array
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+    return arr
 
-
-array = [69, 23, 02, 45, 1]
-sorted_array = select_sort(array)
-print("Sorted array is:", sorted_array)
+# Example usage:
+arr = [64, 25, 12, 22, 11]
+sorted_arr = selection_sort(arr)
+print("Sorted array is:", sorted_arr)
